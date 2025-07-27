@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Selector de idioma */
+.language-switcher {
+    text-align: right;
+    padding: 10px;
+}
+
+.lang-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.lang-btn.active {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Banner de descuento */
+.discount-banner {
+    position: relative;
+}
+
+.countdown {
+    background: #e74c3c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Tarjetas de precios */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pricing-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background: white;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.discounted {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Test de nivel */
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.quiz-question {
+    margin-bottom: 15px;
+}
+
+/* Comunidad */
+.posts-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.comments {
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 3px solid #4CAF50;
+}
+
+/* Juego de práctica */
+#matching-game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #matching-game {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
