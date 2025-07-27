@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de Español</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="zh">中文</button>
+        </div>
+        <h1 data-translate="header_title">Aprende Español Eficazmente</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#classes" data-translate="nav_classes">Clases y Tarifas</a></li>
+            <li><a href="#test" data-translate="nav_test">¿Qué nivel tengo?</a></li>
+            <li><a href="#community" data-translate="nav_community">Comunidad</a></li>
+            <li><a href="#practice" data-translate="nav_practice">Práctica Diaria</a></li>
+            <li><a href="#reviews" data-translate="nav_reviews">Reseñas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="classes" class="discount-banner">
+            <div class="countdown" data-translate="discount_text">¡Oferta limitada! 30% de descuento - Termina en: <span id="countdown">24:00:00</span></div>
+            
+            <h2 data-translate="classes_title">Clases y Tarifas</h2>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 data-translate="class1_title">Clases Relámpago</h3>
+                    <p data-translate="class1_desc">1 semana - Todos los días</p>
+                    <p class="original-price">70€ <span class="discounted">49€</span></p>
+                    <p data-translate="class1_detail">Pack de 5 clases (Lunes a Viernes)</p>
+                </div>
+                
+                <!-- Más cards de precios... -->
+            </div>
+        </section>
+
+        <section id="test">
+            <h2 data-translate="test_title">¿Qué nivel de español tengo?</h2>
+            <div id="quiz-container">
+                <!-- Preguntas del test de nivel -->
+                <div class="quiz-question" data-question="1">
+                    <p data-translate="q1">¿Cómo te llamas?</p>
+                    <input type="text" id="answer1">
+                </div>
+                <!-- Más preguntas... -->
+                <button id="check-level" data-translate="check_button">Comprobar mi nivel</button>
+            </div>
+        </section>
+
+        <section id="community">
+            <h2 data-translate="community_title">Comunidad</h2>
+            <div class="login-section">
+                <h3 data-translate="login_title">Acceso Alumnos</h3>
+                <form id="login-form">
+                    <input type="text" placeholder="Usuario" data-translate="username_placeholder">
+                    <input type="password" placeholder="Contraseña" data-translate="password_placeholder">
+                    <button type="submit" data-translate="login_button">Entrar</button>
+                </form>
+            </div>
+            
+            <div class="posts-container">
+                <!-- Ejemplo de posts de comunidad -->
+                <div class="post">
+                    <p><strong>María (Rusia):</strong> ¿Cómo se dice "I'm struggling with subjunctive"?</p>
+                    <div class="comments">
+                        <p><strong>Carlos (Ucrania):</strong> "Tengo dificultades con el subjuntivo" 😊</p>
+                    </div>
+                </div>
+                <!-- Más posts de ejemplo... -->
+            </div>
+        </section>
+
+        <section id="practice">
+            <h2 data-translate="practice_title">Práctica Diaria</h2>
+            <div class="game-container">
+                <div id="matching-game">
+                    <!-- Juego de emparejar imágenes con palabras -->
+                </div>
+                <button id="next-exercise" data-translate="next_button">Siguiente ejercicio</button>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2 data-translate="reviews_title">Reseñas</h2>
+            <div class="reviews-grid">
+                <!-- Reseñas de estudiantes -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-translate="footer_text">© 2023 Academia de Español. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
